@@ -1,0 +1,51 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+      
+      <!-- coffee section start -->
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="coffee_taital">OUR Coffee OFFER</h1>
+               </div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-10 col-md-12">
+                              <div class="coffee_img">
+                                 {% if product.image %}
+                                 <img src="/media/{{ product.image }}"alt="{{ product.title }}">
+                                 {% endif %}
+                              
+                                 <h3 class="prep_text">{{ product.name }}</h3>
+                                 <p>
+                                     {{ product.description }}
+                                 </p>
+                         
+                              </div>
+                               
+                             
+                              
+                        </div>
+                     </div>
+                  </div>
+                 
+         </div>
+      </div>
+      <!-- coffee section end -->
+      <div class="map_main">
+         <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="250" height="500" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+         </div>
+      </div>
+    
+{% endblock %}

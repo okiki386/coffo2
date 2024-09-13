@@ -1,0 +1,39 @@
+{% extends "partials/base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+     
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="about_section_2">
+               <div class="row">
+                  <div class="col-md-6"> 
+                     <div class="about_taital_box">
+                        <h1 class="about_taital">About Our shop</h1>
+                        <h1 class="about_taital_1">Coffee distribution '</h1>
+                        <p class=" about_text">has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as oppos</p>
+                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6"> 
+                     <div class="image_iman"><img src="{% static 'images/about-img.png' %}" class="about_img"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+     
+      <!-- copyright section start -->
+      <div class="map_main">
+         <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="250" height="500" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+         </div>
+      </div>
+      
+      <!-- copyright section end -->
+      
+{% endblock %}
